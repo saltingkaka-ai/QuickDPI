@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_preferences"
+        android:layout_marginEnd="10dp"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DPI Changer"
+            android:textStyle="bold"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/dpiInput"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter DPI (100-1000)"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:background="@android:drawable/edit_text"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/applyBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="APPLY"
+        android:textSize="12sp"
+        android:layout_marginStart="5dp"/>
+
+    <Button
+        android:id="@+id/closeBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="X"
+        android:textSize="12sp"
+        android:layout_marginStart="5dp"/>
+</LinearLayout>
